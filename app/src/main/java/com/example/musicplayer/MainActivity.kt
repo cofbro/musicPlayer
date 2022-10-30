@@ -4,16 +4,21 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.activity.viewModels
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.musicplayer.databinding.ActivityMainBinding
+import com.example.musicplayer.model.SharedViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private val model : SharedViewModel by viewModels ()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater, null, false)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.model = model
+        binding.lifecycleOwner = this
         setContentView(binding.root)
 
         //全屏

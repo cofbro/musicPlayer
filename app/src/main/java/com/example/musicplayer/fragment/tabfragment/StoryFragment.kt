@@ -17,5 +17,4 @@ class StoryFragment : Fragment() {
         binding = FragmentStoryBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-
 }

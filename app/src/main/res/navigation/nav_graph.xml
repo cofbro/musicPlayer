@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/findFragment">
+    app:startDestination="@id/welcomeFragment">
 
     <fragment
         android:id="@+id/findFragment"
@@ -39,4 +39,26 @@
         android:name="com.example.musicplayer.fragment.tabfragment.StoryFragment"
         android:label="fragment_story"
         tools:layout="@layout/fragment_story" />
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="com.example.musicplayer.fragment.AdFragment"
+        android:label="fragment_ad"
+        tools:layout="@layout/fragment_ad" >
+        <action
+            android:id="@+id/action_adFragment_to_findFragment"
+            app:destination="@id/findFragment"
+            app:popUpTo="@id/adFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.musicplayer.fragment.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_adFragment"
+            app:destination="@id/adFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
