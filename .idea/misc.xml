@@ -3,7 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/face_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/love_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/message_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/music_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/ic_play.xml" value="0.226" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/moon_shape_corner.xml" value="0.172" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/navigation_color_selector.xml" value="0.226" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/story_chip_btn.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/story_view_bg.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/yanchang__color_btn.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/yanchang_color_btn.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_boke.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_listen.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_story.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/item_layout_1.xml" value="0.2578125" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/story_item_layout.xml" value="0.25885416666666666" />
         <entry key="..\:/exercise/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.226" />
         <entry key="..\:/exercise/app/src/main/res/drawable/navigation_color_selector.xml" value="0.172" />
         <entry key="..\:/exercise/app/src/main/res/drawable/tab_indicator.xml" value="0.172" />

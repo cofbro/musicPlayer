@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.musicplayer.R
 import com.example.musicplayer.databinding.FragmentListenBinding
+import com.example.musicplayer.utils.setChipWithEvent
+import com.example.musicplayer.utils.setFirstRecyclerView
 
 
 class ListenFragment : Fragment() {
@@ -16,7 +18,13 @@ class ListenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentListenBinding.inflate(layoutInflater, container, false)
+        setChipWithEvent(requireActivity(), binding.chipGroup, binding)
+
+        setFirstRecyclerView(requireActivity(), binding)
+
         return binding.root
     }
+
+
 
 }

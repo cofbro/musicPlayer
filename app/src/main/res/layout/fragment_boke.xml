@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".fragment.BokeFragment">
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         app:tabIndicator="@drawable/tab_indicator"
@@ -14,7 +23,7 @@
         app:tabIndicatorFullWidth="false"
         app:tabIndicatorHeight="3dp"
         android:layout_width="130dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/more"
         app:layout_constraintEnd_toStartOf="@+id/add"
         app:layout_constraintStart_toEndOf="@+id/more"
@@ -49,17 +58,9 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="47dp"
         android:src="@drawable/ic_more"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
