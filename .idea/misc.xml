@@ -13,6 +13,8 @@
         <entry key="..\:/exercise/app/src/main/res/layout/fragment_listen.xml" value="0.24427083333333333" />
         <entry key="..\:/exercise/app/src/main/res/layout/fragment_story.xml" value="0.24427083333333333" />
         <entry key="..\:/exercise/app/src/main/res/menu/bottom_menu.xml" value="0.264" />
+        <entry key="..\:/musicPlayer/musicPlayer/app/src/main/res/layout/fragment_follow.xml" value="0.264" />
+        <entry key="..\:/musicPlayer/musicPlayer/app/src/main/res/layout/recyclerview_follow_item.xml" value="0.16" />
       </map>
     </option>
   </component>
