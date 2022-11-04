@@ -48,10 +48,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_bar">
-<!--关注圈子-->
+        <!--关注圈子-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/follow_zone"
             android:layout_width="match_parent"
@@ -185,21 +186,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="我的圈子"
+                    app:layout_constraintEnd_toEndOf="@id/follow_fifth_icon"
                     app:layout_constraintStart_toStartOf="@id/follow_fifth_icon"
-                    app:layout_constraintTop_toBottomOf="@id/follow_fifth_icon"
-                    app:layout_constraintEnd_toEndOf="@id/follow_fifth_icon" />
+                    app:layout_constraintTop_toBottomOf="@id/follow_fifth_icon" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-<!--动态分类-->
+        <!--动态分类-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/follow_classify"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            app:layout_constraintTop_toBottomOf="@id/follow_zone"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/follow_zone">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -210,6 +211,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/follow_tableTap"
                 android:layout_width="190dp"
@@ -245,13 +247,13 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-<!--动态具体内容-->
+        <!--动态具体内容-->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/follow_viewpager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/follow_classify"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/follow_classify" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
