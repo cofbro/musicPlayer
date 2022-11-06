@@ -43,15 +43,15 @@ fun View.startAnimationWithListener(
     this.startAnimation(animation)
 }
 
-fun showBottomNavigationView(bottomNavigationView: BottomNavigationView) {
+fun showBottomNavigationView(view: View) {
 
-    ObjectAnimator.ofFloat(bottomNavigationView,"translationY",0f).apply {
+    ObjectAnimator.ofFloat(view,"translationY",0f).apply {
         duration = 0
     }.start()
 }
 
-fun hideBottomNavigationView(bottomNavigationView: BottomNavigationView) {
-    ObjectAnimator.ofFloat(bottomNavigationView,"translationY",300f).apply {
+fun hideBottomNavigationView(view: View) {
+    ObjectAnimator.ofFloat(view,"translationY",300f).apply {
         duration = 0
     }.start()
 }
