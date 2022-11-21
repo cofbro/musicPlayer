@@ -3,7 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a277fc50450c3ae0588b34f6c4cc5a21366a9b52
     <mapping directory="$PROJECT_DIR$/DrawBoard" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/HappyGame" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MyApp" vcs="Git" />
