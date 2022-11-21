@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 
-class BokePagerAdapter(fragmentManager: FragmentManager, lifecycle: androidx.lifecycle.Lifecycle): FragmentStateAdapter(fragmentManager, lifecycle) {
+class BokePagerAdapter   (fragmentManager: FragmentManager, lifecycle: androidx.lifecycle.Lifecycle): FragmentStateAdapter(fragmentManager, lifecycle) {
     private var pageList = emptyList<Fragment>()
     override fun getItemCount(): Int {
         return pageList.size

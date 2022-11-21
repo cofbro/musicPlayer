@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/ASUS/Desktop/musicPlayer/app/src/main/res/drawable-v24/radius_b_border.xml" value="0.1775" />
         <entry key="..\:/Users/ASUS/Desktop/musicPlayer/app/src/main/res/drawable/ic_add.xml" value="0.2065" />
         <entry key="..\:/Users/ASUS/Desktop/musicPlayer/app/src/main/res/drawable/ic_boke.xml" value="0.148" />
@@ -32,7 +33,24 @@
         <entry key="..\:/Users/ASUS/Desktop/musicPlayer/app/src/main/res/layout/fragment_welcome.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/ASUS/Desktop/musicPlayer/app/src/main/res/layout/playlist_item.xml" value="0.4" />
         <entry key="..\:/Users/ASUS/Desktop/musicPlayer/app/src/main/res/menu/bottom_menu.xml" value="0.25364583333333335" />
+=======
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/face_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/love_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/message_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable-v24/music_shape_corner.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/ic_play.xml" value="0.226" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/moon_shape_corner.xml" value="0.172" />
+>>>>>>> 2f947408c51157903fa11c47e940b2aeaef260ab
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/navigation_color_selector.xml" value="0.226" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/story_chip_btn.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/story_view_bg.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/yanchang__color_btn.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/yanchang_color_btn.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_boke.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_listen.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_story.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/item_layout_1.xml" value="0.2578125" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/story_item_layout.xml" value="0.25885416666666666" />
         <entry key="..\:/exercise/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.226" />
         <entry key="..\:/exercise/app/src/main/res/drawable/navigation_color_selector.xml" value="0.172" />
         <entry key="..\:/exercise/app/src/main/res/drawable/tab_indicator.xml" value="0.172" />
