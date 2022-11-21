@@ -129,8 +129,9 @@
 
                 <ImageView
                     android:id="@+id/recently_played2"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
+                    android:tag="one"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
                     android:src="@drawable/ic_play"
                     app:layout_constraintBottom_toBottomOf="@+id/recently_played3"
                     app:layout_constraintEnd_toStartOf="@+id/recently_played3"
@@ -138,9 +139,10 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <ImageView
+                    android:tag="tow"
                     android:id="@+id/recently_played3"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
                     android:src="@drawable/ic_download"
                     app:layout_constraintBottom_toBottomOf="@+id/Recently_played"
                     app:layout_constraintEnd_toStartOf="@+id/Recently_played"
@@ -148,9 +150,10 @@
                     app:layout_constraintStart_toEndOf="@+id/recently_played2" />
 
                 <ImageView
+                    android:tag="four"
                     android:id="@+id/recently_played"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:layout_marginTop="16dp"
                     android:src="@drawable/ic_buy"
                     app:layout_constraintDimensionRatio="w,1:1"
@@ -160,9 +163,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:tag="three"
                     android:id="@+id/Recently_played"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:src="@drawable/ic_upload"
                     app:layout_constraintBottom_toBottomOf="@+id/recently_played"
                     app:layout_constraintEnd_toStartOf="@+id/recently_played"
@@ -214,9 +218,10 @@
                     app:layout_constraintTop_toBottomOf="@+id/recently_played" />
 
                 <ImageView
+                    android:tag="five"
                     android:id="@+id/imageView5"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:src="@drawable/ic_friends"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                     app:layout_constraintEnd_toStartOf="@+id/imageView6"
@@ -225,9 +230,10 @@
                     />
 
                 <ImageView
+                    android:tag="six"
                     android:id="@+id/imageView6"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:src="@drawable/ic_collection"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView7"
                     app:layout_constraintEnd_toStartOf="@+id/imageView7"
@@ -236,9 +242,10 @@
                     />
 
                 <ImageView
+                    android:tag="seven"
                     android:id="@+id/imageView7"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:src="@drawable/ic_boke"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                     app:layout_constraintEnd_toStartOf="@+id/imageView8"
@@ -247,9 +254,10 @@
                     app:tint="#f8533e" />
 
                 <ImageView
+                    android:tag="eight"
                     android:id="@+id/imageView8"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:layout_marginBottom="30dp"
                     android:src="@drawable/ic_music_box"
                     app:layout_constraintBottom_toBottomOf="parent"

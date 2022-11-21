@@ -33,7 +33,32 @@
         android:id="@+id/selfFragment"
         android:name="com.example.musicplayer.fragment.SelfFragment"
         android:label="fragment_self"
-        tools:layout="@layout/fragment_self" />
+        tools:layout="@layout/fragment_self" >
+        <action
+            android:id="@+id/four"
+            app:destination="@id/buyFragment" />
+        <action
+            android:id="@+id/eight"
+            app:destination="@id/musicBoxFragment" />
+        <action
+            android:id="@+id/five"
+            app:destination="@id/myFriendFragment" />
+        <action
+            android:id="@+id/action_selfFragment_to_downLoadFragment"
+            app:destination="@id/downLoadFragment" />
+        <action
+            android:id="@+id/two"
+            app:destination="@id/downLoadFragment" />
+        <action
+            android:id="@+id/seven"
+            app:destination="@id/myBokeFragment" />
+        <action
+            android:id="@+id/one"
+            app:destination="@id/recentPlayFragment" />
+        <action
+            android:id="@+id/three"
+            app:destination="@id/uploadFragment" />
+    </fragment>
     <fragment
         android:id="@+id/storyFragment"
         android:name="com.example.musicplayer.fragment.tabfragment.StoryFragment"
@@ -61,4 +86,39 @@
             app:popUpTo="@id/welcomeFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/buyFragment"
+        android:name="com.example.musicplayer.fragment.BuyFragment"
+        android:label="fragment_buy"
+        tools:layout="@layout/fragment_buy" />
+    <fragment
+        android:id="@+id/musicBoxFragment"
+        android:name="com.example.musicplayer.fragment.MusicBoxFragment"
+        android:label="fragment_music_box"
+        tools:layout="@layout/fragment_music_box" />
+    <fragment
+        android:id="@+id/myFriendFragment"
+        android:name="com.example.musicplayer.fragment.MyFriendFragment"
+        android:label="fragment_my_friend"
+        tools:layout="@layout/fragment_my_friend" />
+    <fragment
+        android:id="@+id/downLoadFragment"
+        android:name="com.example.musicplayer.fragment.DownLoadFragment"
+        android:label="fragment_down_load"
+        tools:layout="@layout/fragment_down_load" />
+    <fragment
+        android:id="@+id/myBokeFragment"
+        android:name="com.example.musicplayer.fragment.MyBokeFragment"
+        android:label="fragment_my_boke"
+        tools:layout="@layout/fragment_my_boke" />
+    <fragment
+        android:id="@+id/recentPlayFragment"
+        android:name="com.example.musicplayer.fragment.RecentPlayFragment"
+        android:label="fragment_recent_play"
+        tools:layout="@layout/fragment_recent_play" />
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.example.musicplayer.fragment.UploadFragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" />
 </navigation>

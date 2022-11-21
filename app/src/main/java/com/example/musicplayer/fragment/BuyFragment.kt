@@ -6,20 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.musicplayer.R
-import com.example.musicplayer.databinding.FragmentSelfBinding
 
+class BuyFragment : Fragment() {
 
-class SelfFragment : Fragment() {
-    private lateinit var binding: FragmentSelfBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentSelfBinding.inflate(layoutInflater, container, false)
-        return binding.root
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_buy, container, false)
     }
-
 
 
 }
