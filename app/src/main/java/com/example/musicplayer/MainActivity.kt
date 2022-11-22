@@ -15,11 +15,8 @@ import com.example.musicplayer.model.SharedViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-<<<<<<< HEAD
     private val model : SharedViewModel by viewModels ()
-=======
     private lateinit var iconfont: Typeface
->>>>>>> a277fc50450c3ae0588b34f6c4cc5a21366a9b52
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)

@@ -19,7 +19,7 @@
         android:id="@+id/communityFragment"
         android:name="com.example.musicplayer.fragment.CommunityFragment"
         android:label="fragment_community"
-        tools:layout="@layout/fragment_community" />
+        tools:layout="@layout/fragment_community2" />
     <fragment
         android:id="@+id/followFragment"
         android:name="com.example.musicplayer.fragment.FollowFragment"
