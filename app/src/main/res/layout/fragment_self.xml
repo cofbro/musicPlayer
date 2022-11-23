@@ -332,7 +332,7 @@
                         android:id="@+id/imageView9"
                         android:layout_width="59dp"
                         android:layout_height="58dp"
-                        android:src="@drawable/music" />
+                        android:src="@drawable/ic_music_icon" />
 
                     <ImageView
                         android:id="@+id/imageView10"

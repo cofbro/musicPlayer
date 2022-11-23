@@ -8,10 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="backgroud">#FFFFFFFF</color>
     <color name="themeRed">#FB0707</color>
-<<<<<<< HEAD
+    <color name="white">#FFFF</color>
     <color name="gray">#CDB1AEAE</color>
-=======
     <color name="background">#f5f5f5</color>
 
->>>>>>> a277fc50450c3ae0588b34f6c4cc5a21366a9b52
 </resources>

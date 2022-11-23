@@ -2,16 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a277fc50450c3ae0588b34f6c4cc5a21366a9b52
-    <mapping directory="$PROJECT_DIR$/DrawBoard" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/HappyGame" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MyApp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MyCalculator" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Unlock" vcs="Git" />
->>>>>>> 2f947408c51157903fa11c47e940b2aeaef260ab
   </component>
 </project>

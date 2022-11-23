@@ -9,25 +9,14 @@
             type="com.example.musicplayer.model.SharedViewModel"/>
     </data>
 
-<<<<<<< HEAD
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-=======
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:background="@color/backgroud"
-        android:layout_width="0dp"
-        android:layout_height="73dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:itemIconTint="@drawable/navigation_color_selector"
-        app:itemTextColor="@drawable/navigation_color_selector"
-        app:itemRippleColor="@color/themeRed"
-        app:menu="@menu/bottom_menu"/>
->>>>>>> a277fc50450c3ae0588b34f6c4cc5a21366a9b52
+
+
+
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
@@ -80,7 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:src="@drawable/music"
+                    android:src="@drawable/ic_music_icon"
                     tools:layout_editor_absoluteX="27dp"
                     tools:layout_editor_absoluteY="11dp" />
             </androidx.cardview.widget.CardView>
