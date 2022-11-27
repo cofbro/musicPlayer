@@ -1,6 +1,7 @@
 package com.example.musicplayer.events
 
 import android.view.View
+import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.BindingAdapter
 import com.example.musicplayer.untils.hideBottomNavigationView
@@ -16,4 +17,9 @@ fun View.shouldShow(show:Boolean) {
            hideBottomNavigationView(this)
 
     }
+}
+
+@BindingAdapter("clickEvents")
+fun ImageView.clickEvents(){
+
 }

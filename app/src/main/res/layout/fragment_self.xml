@@ -129,7 +129,7 @@
 
                 <ImageView
                     android:id="@+id/recently_played2"
-                    android:tag="one"
+                    android:tag="A"
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:src="@drawable/ic_play"
@@ -139,7 +139,7 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <ImageView
-                    android:tag="tow"
+                    android:tag="B"
                     android:id="@+id/recently_played3"
                     android:layout_width="34dp"
                     android:layout_height="34dp"
@@ -150,7 +150,7 @@
                     app:layout_constraintStart_toEndOf="@+id/recently_played2" />
 
                 <ImageView
-                    android:tag="four"
+                    android:tag="D"
                     android:id="@+id/recently_played"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -163,7 +163,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:tag="three"
+                    android:tag="C"
                     android:id="@+id/Recently_played"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -218,7 +218,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/recently_played" />
 
                 <ImageView
-                    android:tag="five"
+                    android:tag="E"
                     android:id="@+id/imageView5"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -230,7 +230,7 @@
                     />
 
                 <ImageView
-                    android:tag="six"
+                    android:tag="F"
                     android:id="@+id/imageView6"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -242,7 +242,7 @@
                     />
 
                 <ImageView
-                    android:tag="seven"
+                    android:tag="G"
                     android:id="@+id/imageView7"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -254,7 +254,7 @@
                     app:tint="#f8533e" />
 
                 <ImageView
-                    android:tag="eight"
+                    android:tag="H"
                     android:id="@+id/imageView8"
                     android:layout_width="36dp"
                     android:layout_height="36dp"

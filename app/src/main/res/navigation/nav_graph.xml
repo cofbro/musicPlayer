@@ -35,29 +35,32 @@
         android:label="fragment_self"
         tools:layout="@layout/fragment_self" >
         <action
-            android:id="@+id/four"
+            android:id="@+id/D"
             app:destination="@id/buyFragment" />
         <action
-            android:id="@+id/eight"
+            android:id="@+id/H"
             app:destination="@id/musicBoxFragment" />
         <action
-            android:id="@+id/five"
+            android:id="@+id/E"
             app:destination="@id/myFriendFragment" />
         <action
             android:id="@+id/action_selfFragment_to_downLoadFragment"
             app:destination="@id/downLoadFragment" />
         <action
-            android:id="@+id/two"
+            android:id="@+id/B"
             app:destination="@id/downLoadFragment" />
         <action
-            android:id="@+id/seven"
+            android:id="@+id/G"
             app:destination="@id/myBokeFragment" />
         <action
-            android:id="@+id/one"
+            android:id="@+id/A"
             app:destination="@id/recentPlayFragment" />
         <action
-            android:id="@+id/three"
+            android:id="@+id/C"
             app:destination="@id/uploadFragment" />
+        <action
+            android:id="@+id/F"
+            app:destination="@id/collectionFragment" />
     </fragment>
     <fragment
         android:id="@+id/storyFragment"
@@ -121,4 +124,9 @@
         android:name="com.example.musicplayer.fragment.UploadFragment"
         android:label="fragment_upload"
         tools:layout="@layout/fragment_upload" />
+    <fragment
+        android:id="@+id/collectionFragment"
+        android:name="com.example.musicplayer.fragment.CollectionFragment"
+        android:label="fragment_collection"
+        tools:layout="@layout/fragment_collection" />
 </navigation>
