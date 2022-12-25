@@ -1,5 +1,6 @@
 package com.example.musicplayer.fragment.tabfragment
 
+import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
@@ -32,17 +33,13 @@ class ListenFragment : Fragment() {
 
         setFirstRecyclerView(requireActivity(), binding)
 
-        lifecycleScope.launch(Dispatchers.IO) {
-            model.getMusicBinaryDataFromLC(requireContext())
-            withContext(Dispatchers.Main) {
-                val file = File(requireContext().filesDir.path+"mis")
-                val player = MediaPlayer.create(requireContext(), Uri.fromFile(file))
-                player.start()
-            }
-        }
+
+
+
+
+
         return binding.root
     }
-
 
 
 }
