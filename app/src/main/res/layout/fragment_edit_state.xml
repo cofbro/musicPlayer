@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickEvent"
+            type="com.example.musicplayer.ClickEvent" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.EditStateFragment"
+        android:background="@color/background">
+        <!--顶部状态栏-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/edit_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/edit_state_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/arrow_back"
+                android:onClick="@{(view)->clickEvent.backToLastFragment(view)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="编辑动态"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_state_back"
+                app:layout_constraintStart_toEndOf="@+id/edit_state_back"
+                app:layout_constraintTop_toTopOf="@+id/edit_state_back" />
+
+            <Button
+                android:id="@+id/edit_post"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/radius_border"
+                android:backgroundTint="@color/themeRed"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_state_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edit_state_back" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/space_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@drawable/vertical_border"
+            android:backgroundTint="#A6F6E7E7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_tool_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            android:layout_alignParentBottom = "true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingDefaultResource"
+            app:layout_constraintTop_toBottomOf="@+id/space_line">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--    文本输入框-->
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/background"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="发长文时，可以总结一句标题哦"
+                    android:maxLines="10"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    />
+<!--                摆放图片-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mRecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="16dp" />
+                <!--                分割线-->
+
+
+                <ImageView
+                    android:id="@+id/space_line_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/vertical_border"
+                    android:backgroundTint="#A6F6E7E7"
+                    android:layout_alignTop="@id/edit_bottom_tool_bar"
+                    />
+                <!--    底部工具栏-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/edit_bottom_tool_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    >
+                    <!--导入音乐-->
+                    <ImageView
+                        android:id="@+id/import_music"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/edit_import_music"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/import_picture"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!--导入图片-->
+                    <ImageView
+                        android:id="@+id/import_picture"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:onClick="@{(view)->clickEvent.getPictureFromAlbum(view)"
+                        android:src="@drawable/edit_import_picture"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/record_voice"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/import_music"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!--录音-->
+                    <ImageView
+                        android:id="@+id/record_voice"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/record"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/aite_someone"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/import_picture"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!--艾特-->
+                    <ImageView
+                        android:id="@+id/aite_someone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/edit_aite"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView23"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/record_voice"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="82dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/dongtai_radius_border"
+                        android:gravity="center"
+                        android:text="所有人可见"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@id/import_music"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/aite_someone"
+                        app:layout_constraintTop_toTopOf="@id/import_music"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
