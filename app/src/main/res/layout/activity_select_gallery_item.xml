@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/show1"
+            android:layout_width="259dp"
+            android:layout_height="0dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/show2"
+            app:layout_constraintStart_toEndOf="@+id/imageView_top1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/show2"
+            android:layout_width="259dp"
+            android:layout_height="0dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/show3"
+            app:layout_constraintStart_toEndOf="@+id/imageView_top2"
+            app:layout_constraintTop_toBottomOf="@+id/show1" />
+
+        <TextView
+            android:id="@+id/show3"
+            android:layout_width="259dp"
+            android:layout_height="0dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_top3"
+            app:layout_constraintTop_toBottomOf="@+id/show2" />
+
+        <ImageView
+            android:id="@+id/imageView_top1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_top2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <ImageView
+            android:id="@+id/imageView_top2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_top3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_top1"
+            app:layout_constraintStart_toStartOf="@+id/imageView_top1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_top1" />
+
+        <ImageView
+            android:id="@+id/imageView_top3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_top2"
+            app:layout_constraintStart_toStartOf="@+id/imageView_top2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_top2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

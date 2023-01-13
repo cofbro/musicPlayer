@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="sharemodel"
+    type="com.example.musicplayer.viewModel.SharedViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/searchsongname"
+            android:layout_width="79dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:text="歌曲"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/searchsongsinger"
+            android:layout_width="82dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:text="作者"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <ImageView
+            android:id="@+id/searchsongplay"
+            android:layout_width="63dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchsongsinger"
+            app:srcCompat="@drawable/play"
+            tools:layout_editor_absoluteY="4dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+<variable
+    name="sharemodel"
+    type="com.example.musicplayer.viewModel.SharedViewModel" />
+        <variable
+            name="click"
+            type="com.example.musicplayer.Onclick" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/id_index_gallery_item_image_commend"
+            android:layout_width="138dp"
+            android:layout_height="85dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+
+
+           />
+
+        <TextView
+            android:id="@+id/text_item_commend"
+            android:layout_width="103dp"
+            android:layout_height="46dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/id_index_gallery_item_image_commend"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_index_gallery_item_image_commend">
+
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
