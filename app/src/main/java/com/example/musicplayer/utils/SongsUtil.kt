@@ -4,6 +4,7 @@ import android.content.Context
 import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.net.Uri
+import android.util.Log
 import android.widget.Toast
 import cn.leancloud.LCFile
 import cn.leancloud.LCQuery
@@ -14,7 +15,10 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
 
-class SongsUtil(private val context: Context, private var allMusicBinaryMap: MutableMap<String, String>?) {
+class SongsUtil(
+    private val context: Context,
+    private var allMusicBinaryMap: MutableMap<String, String>?
+) {
     private val baseFilePath = context.filesDir.path + "/songs"
 
     // 对外暴露的播放方法
@@ -29,7 +33,6 @@ class SongsUtil(private val context: Context, private var allMusicBinaryMap: Mut
                     initMusicPlayer(it.value, player)
                     player.start()
                 }
-
             }
         }
     }
@@ -69,8 +72,9 @@ class SongsUtil(private val context: Context, private var allMusicBinaryMap: Mut
     }
 
     // 从 LC 上拿到歌曲的 url 和 歌名
-    private fun getMusicInfoFromLC(
-        successCallback: (MutableMap<String, String>) -> Unit = {}
+    fun getMusicInfoFromLC(
+        getListCallback: (ArrayList<SongPair>) -> Unit = {},
+        getMapCallback: (MutableMap<String, String>) -> Unit = {}
     ) {
         val query = LCQuery<LCFile>("_File")
         query.findInBackground().subscribe(object : Observer<List<LCFile>> {
@@ -78,13 +82,17 @@ class SongsUtil(private val context: Context, private var allMusicBinaryMap: Mut
 
             override fun onNext(t: List<LCFile>) {
                 val map = mutableMapOf<String, String>()
+                val list = arrayListOf<SongPair>()
                 t.forEach {
                     map[it.name] = it.url
+                    list.add(SongPair(it.name, it.url))
                 }
-                successCallback(map)
+                getMapCallback(map)
+                getListCallback(list)
             }
 
             override fun onError(e: Throwable) {
+                Log.d("chy","error: ${e.message}")
                 Toast.makeText(context, "暂无歌曲", Toast.LENGTH_SHORT).show()
             }
 
@@ -189,4 +197,8 @@ class SongsUtil(private val context: Context, private var allMusicBinaryMap: Mut
         return File(path)
     }
 
+    class SongPair(
+        val songName: String,
+        val url: String
+    )
 }

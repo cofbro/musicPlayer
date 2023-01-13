@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         // 注意 player 需要是全局变量
-        mainViewModel.playMusic("过山车", player)
+        //mainViewModel.playMusic("过山车", player)
     }
 
     override fun onResume() {

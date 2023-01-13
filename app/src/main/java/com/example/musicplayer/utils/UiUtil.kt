@@ -31,13 +31,13 @@ fun setChipWithEvent(context: Context, chipGroup: ChipGroup, binding: FragmentLi
 fun setFirstRecyclerView(context: Context, binding: FragmentListenBinding) {
     binding.recyclerView1.adapter = ListenAdapter()
     binding.recyclerView1.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-    binding.recyclerView1.addItemDecoration(SpacingItemDecoration(15,0,15,0))
+    binding.recyclerView1.addItemDecoration(SpacingItemDecoration(15,0,15,0,false))
 
     binding.recyclerView2.adapter = ListenAdapter()
     binding.recyclerView2.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-    binding.recyclerView2.addItemDecoration(SpacingItemDecoration(15,0,15,0))
+    binding.recyclerView2.addItemDecoration(SpacingItemDecoration(15,0,15,0,false))
 
     binding.recyclerView3.adapter = ListenAdapter()
     binding.recyclerView3.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
-    binding.recyclerView3.addItemDecoration(SpacingItemDecoration(15,0,15,0))
+    binding.recyclerView3.addItemDecoration(SpacingItemDecoration(15,0,15,0,false))
 }

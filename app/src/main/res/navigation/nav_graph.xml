@@ -12,9 +12,13 @@
         tools:layout="@layout/fragment_find" />
     <fragment
         android:id="@+id/bokeFragment"
-        android:name="com.example.musicplayer.fragment.BokeFragment"
+        android:name="com.example.musicplayer.fragment.bokefragment.BokeFragment"
         android:label="fragment_boke"
-        tools:layout="@layout/fragment_boke" />
+        tools:layout="@layout/fragment_boke" >
+        <action
+            android:id="@+id/action_bokeFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/communityFragment"
         android:name="com.example.musicplayer.fragment.CommunityFragment"
@@ -39,4 +43,9 @@
         android:name="com.example.musicplayer.fragment.tabfragment.StoryFragment"
         android:label="fragment_story"
         tools:layout="@layout/fragment_story" />
+    <fragment
+        android:id="@+id/songListFragment"
+        android:name="com.example.musicplayer.fragment.bokefragment.SongListFragment"
+        android:label="fragment_song_list"
+        tools:layout="@layout/fragment_song_list" />
 </navigation>
