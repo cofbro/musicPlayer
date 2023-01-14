@@ -19,7 +19,3 @@ fun View.shouldShow(show:Boolean) {
     }
 }
 
-@BindingAdapter("clickEvents")
-fun ImageView.clickEvents(){
-
-}
