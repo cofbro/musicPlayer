@@ -33,14 +33,10 @@ class BokeFragment : Fragment() {
         bokePagerAdapter.setPageList(listOf(ListenFragment(), StoryFragment()))
 
         binding.viewPager.adapter = bokePagerAdapter
-<<<<<<< HEAD
 
-        TabLayoutMediator(binding.tabLayout, binding.viewPager){ tab, position ->
-            when(position) {
-=======
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             when (position) {
->>>>>>> 2f947408c51157903fa11c47e940b2aeaef260ab
+
                 0 -> tab.text = "听听"
                 1 -> tab.text = "故事"
             }

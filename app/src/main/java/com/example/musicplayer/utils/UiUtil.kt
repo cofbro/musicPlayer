@@ -8,12 +8,23 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.musicplayer.R
 import com.example.musicplayer.adapter.ListenAdapter
+import com.example.musicplayer.databinding.FragmentKtvBinding
 import com.example.musicplayer.databinding.FragmentListenBinding
 import com.example.musicplayer.databinding.ItemLayout1Binding
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 
 fun setChipWithEvent(context: Context, chipGroup: ChipGroup, binding: FragmentListenBinding) {
+    for (i in 0..6) {
+        (chipGroup.getChildAt(i) as Chip).paint.typeface = Typeface.DEFAULT_BOLD
+    }
+    chipGroup.setOnCheckedChangeListener { _, checkedId ->
+
+    }
+
+}
+
+fun setChipWithEvent(context: Context, chipGroup: ChipGroup, binding: FragmentKtvBinding) {
     for (i in 0..6) {
         (chipGroup.getChildAt(i) as Chip).paint.typeface = Typeface.DEFAULT_BOLD
     }

@@ -5,39 +5,40 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 import com.example.musicplayer.R
+import com.example.musicplayer.databinding.SquareItemLayoutBinding
 
 //圆括号是构造函数 要被实例化
 //尖括号是接口不加圆括号 不能被实例化
 class SquareAdapter:RecyclerView.Adapter<SquareAdapter.MyViewHolder>() {
-    class MyViewHolder(view: View):RecyclerView.ViewHolder(view){
-        val userNameButton = view.findViewById<TextView>(R.id.userNameText)
+    class MyViewHolder(val binding:SquareItemLayoutBinding):RecyclerView.ViewHolder(binding.root) {
+        fun bind(){
+            binding.squareUserNameText.text = "一块兔土司"
+            Glide.with(binding.root.context)
+                .load(R.drawable.user_avatar)
+                .apply( RequestOptions()
+                    .transforms( CenterCrop(),  RoundedCorners(30)
+                    ))
+                .into(binding.squareAvatarPic)
+        }
     }
 
-    //数据源
-    val userNameList = listOf("A","B","C","D","E","F","G","H","I","J","K")
-
-    //item显示的样式 布局
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        //0.创建LayoutInflater布局解析器
         val inflater = LayoutInflater.from(parent.context)
-        //1.将xml中的view解析出来 LayoutInflater 不要加到父容器上
-        val view = inflater.inflate(R.layout.fragment_video,parent,false)
-        //2.创建ViewHolder对象
-        return MyViewHolder(view)
+        val binding = SquareItemLayoutBinding.inflate(inflater,parent,false)
+        return MyViewHolder(binding)
     }
 
-    //将数据绑定到这个ViewHolder中
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        //0.取出需要的数据
-        val userName = userNameList[position]
-        //1.将数据显示到ViewHolder存储的View的对应控件中
-        holder.userNameButton.text = userName
+        holder.bind()
     }
 
     override fun getItemCount(): Int {
-        return userNameList.size
+        return 10
     }
-
 
 }

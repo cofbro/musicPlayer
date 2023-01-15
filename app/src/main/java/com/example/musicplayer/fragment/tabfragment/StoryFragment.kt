@@ -21,17 +21,14 @@ class StoryFragment : Fragment() {
         binding = FragmentStoryBinding.inflate(layoutInflater, container, false)
 
         binding.recyclerView.adapter = StoryAdapter()
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireActivity(), RecyclerView.HORIZONTAL, false)
+        binding.recyclerView.layoutManager =
+            LinearLayoutManager(requireActivity(), RecyclerView.HORIZONTAL, false)
         binding.recyclerView.addItemDecoration(SpacingItemDecoration(15, 0, 10, 15))
 
         return binding.root
     }
-<<<<<<< HEAD
-=======
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
     }
-
->>>>>>> 2f947408c51157903fa11c47e940b2aeaef260ab
 }
