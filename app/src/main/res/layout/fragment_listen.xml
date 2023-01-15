@@ -411,7 +411,6 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/recyclerView2"
                 android:layout_width="match_parent"
                 android:layout_height="313dp"
                 android:layout_marginStart="15dp"
