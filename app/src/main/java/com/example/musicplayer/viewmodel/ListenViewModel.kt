@@ -1,5 +1,6 @@
 package com.example.musicplayer.viewmodel
 
+<<<<<<< HEAD
 import android.content.Context
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
@@ -55,3 +56,14 @@ class ListenViewModel : ViewModel() {
 
     }
 }
+=======
+
+
+import androidx.lifecycle.ViewModel
+
+
+
+class ListenViewModel : ViewModel() {
+
+}
+>>>>>>> chy

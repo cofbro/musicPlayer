@@ -21,9 +21,8 @@ class StoryFragment : Fragment() {
         binding = FragmentStoryBinding.inflate(layoutInflater, container, false)
 
         binding.recyclerView.adapter = StoryAdapter()
-        binding.recyclerView.layoutManager =
-            LinearLayoutManager(requireActivity(), RecyclerView.HORIZONTAL, false)
-        binding.recyclerView.addItemDecoration(SpacingItemDecoration(15, 0, 10, 15))
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireActivity(), RecyclerView.HORIZONTAL, false)
+        binding.recyclerView.addItemDecoration(SpacingItemDecoration(15, 0, 10, 15,false))
 
         return binding.root
     }

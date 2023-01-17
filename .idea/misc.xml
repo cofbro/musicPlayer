@@ -42,14 +42,20 @@
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/moon_shape_corner.xml" value="0.172" />
 >>>>>>> 2f947408c51157903fa11c47e940b2aeaef260ab
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/navigation_color_selector.xml" value="0.226" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/ripple_click.xml" value="0.173" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/story_chip_btn.xml" value="0.172" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/story_view_bg.xml" value="0.172" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/tab_indicator.xml" value="0.226" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/transparent_rounded_bg.xml" value="0.173" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/vertical_round_shape.xml" value="0.173" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/yanchang__color_btn.xml" value="0.172" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/drawable/yanchang_color_btn.xml" value="0.172" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_boke.xml" value="0.25885416666666666" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_listen.xml" value="0.25885416666666666" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_song_list.xml" value="0.24635416666666668" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/fragment_story.xml" value="0.25885416666666666" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/item_layout_1.xml" value="0.2578125" />
+        <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/song_list_item.xml" value="0.2012820512820513" />
         <entry key="..\:/exercise/MusicPlayer/app/src/main/res/layout/story_item_layout.xml" value="0.25885416666666666" />
         <entry key="..\:/exercise/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.226" />
         <entry key="..\:/exercise/app/src/main/res/drawable/navigation_color_selector.xml" value="0.172" />

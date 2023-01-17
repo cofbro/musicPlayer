@@ -28,6 +28,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         maven { url 'https://maven.google.com' }
 
@@ -44,6 +45,9 @@ dependencyResolutionManagement {
             url 'https://maven.aliyun.com/repository/mapr-public'
         }
 >>>>>>> origin/wd
+=======
+        maven { url 'https://jitpack.io' }
+>>>>>>> chy
     }
 }
 rootProject.name = "MusicPlayer"

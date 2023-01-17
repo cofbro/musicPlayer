@@ -2,7 +2,6 @@ package com.example.musicplayer
 
 
 import android.graphics.Color
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -12,7 +11,6 @@ import android.os.Build
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
-import androidx.core.content.PackageManagerCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -36,8 +34,6 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
-<<<<<<< HEAD
-=======
         //检查权限
         checkPermission()
         //申请权限
@@ -49,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         binding.bottomNavigationView.setupWithNavController(navHostFragment.navController)
 
->>>>>>> origin/wd
     }
 
     override fun onResume() {
@@ -60,11 +55,10 @@ class MainActivity : AppCompatActivity() {
         window.navigationBarDividerColor = resources.getColor(R.color.themeRed, null)
         //状态栏黑字
         controller.isAppearanceLightStatusBars = true
-<<<<<<< HEAD
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         binding.bottomNavigationView.setupWithNavController(navHostFragment.navController)
-=======
     }
     //检查权限
     fun checkPermission(){
@@ -96,7 +90,6 @@ class MainActivity : AppCompatActivity() {
             permissionArray.add(android.Manifest.permission.READ_EXTERNAL_STORAGE)
         }
         resultLauncher.launch(permissionArray.toTypedArray())
->>>>>>> origin/wd
     }
 
 }
