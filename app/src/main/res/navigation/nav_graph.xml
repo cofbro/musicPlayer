@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/communityFragment"
-        android:name="com.example.musicplayer.fragment.CommunityFragment"
+        android:name="com.example.musicplayer.fragment.community.CommunityFragment"
         android:label="fragment_community"
         tools:layout="@layout/fragment_community" />
     <fragment
@@ -184,8 +184,13 @@
             android:id="@+id/action_editStateFragment_to_followFragment"
             app:destination="@id/followFragment" />
     </fragment>
+    <fragment
         android:id="@+id/songListFragment"
         android:name="com.example.musicplayer.fragment.bokefragment.SongListFragment"
         android:label="fragment_song_list"
         tools:layout="@layout/fragment_song_list" />
+    <fragment
+        android:id="@+id/squareFragment"
+        android:name="com.example.musicplayer.fragment.community.SquareFragment"
+        android:label="SquareFragment" />
 </navigation>

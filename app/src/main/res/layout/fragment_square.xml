@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAe6e6e6"
+    tools:context=".fragment.community.SquareFragment">
+
+    <ScrollView
+        android:layout_marginTop="76dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:orientation="horizontal"
+                android:rowCount="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="0"
+                    android:layout_column="0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView00"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView002"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView00"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView003"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView002"
+                            app:layout_constraintTop_toBottomOf="@+id/textView002" />
+
+                        <TextView
+                            android:id="@+id/textView001"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView00"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView00"
+                            app:layout_constraintStart_toStartOf="@+id/imageView00"
+                            app:layout_constraintTop_toTopOf="@id/imageView00" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="1"
+                    android:layout_column="0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_yellow"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="婚姻研究所"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView10"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="805条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView102"
+                            app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+                        <TextView
+                            android:id="@+id/textView101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="婚"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView10"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                            app:layout_constraintStart_toStartOf="@+id/imageView10"
+                            app:layout_constraintTop_toTopOf="@id/imageView10" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="0"
+                    android:layout_column="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView01"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_purple"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView012"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="CP网恋记事簿"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView01"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView013"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="557条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView012"
+                            app:layout_constraintTop_toBottomOf="@+id/textView012" />
+
+                        <TextView
+                            android:id="@+id/textView011"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="网"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView01"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView01"
+                            app:layout_constraintStart_toStartOf="@+id/imageView01"
+                            app:layout_constraintTop_toTopOf="@id/imageView01" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="1"
+                    android:layout_column="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView112"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="学习互助圈"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView11"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView113"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView112"
+                            app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+                        <TextView
+                            android:id="@+id/textView111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="学"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView11"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+                            app:layout_constraintStart_toStartOf="@+id/imageView11"
+                            app:layout_constraintTop_toTopOf="@id/imageView11" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="0"
+                    android:layout_column="2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView02"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView022"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView02"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView023"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView022"
+                            app:layout_constraintTop_toBottomOf="@+id/textView022" />
+
+                        <TextView
+                            android:id="@+id/textView021"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView02"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView02"
+                            app:layout_constraintStart_toStartOf="@+id/imageView02"
+                            app:layout_constraintTop_toTopOf="@id/imageView02" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="1"
+                    android:layout_column="2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView12"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView122"
+                            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+                        <TextView
+                            android:id="@+id/textView121"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView12"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView12"
+                            app:layout_constraintStart_toStartOf="@+id/imageView12"
+                            app:layout_constraintTop_toTopOf="@id/imageView12" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="0"
+                    android:layout_column="3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView03"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView032"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView03"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView033"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView032"
+                            app:layout_constraintTop_toBottomOf="@+id/textView032" />
+
+                        <TextView
+                            android:id="@+id/textView031"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView03"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView03"
+                            app:layout_constraintStart_toStartOf="@+id/imageView03"
+                            app:layout_constraintTop_toTopOf="@id/imageView03" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="1"
+                    android:layout_column="3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView132"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView13"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView133"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView132"
+                            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+                        <TextView
+                            android:id="@+id/textView131"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView13"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView13"
+                            app:layout_constraintStart_toStartOf="@+id/imageView13"
+                            app:layout_constraintTop_toTopOf="@id/imageView13" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="0"
+                    android:layout_column="4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView04"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView042"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView04"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView043"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView042"
+                            app:layout_constraintTop_toBottomOf="@+id/textView042" />
+
+                        <TextView
+                            android:id="@+id/textView041"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView04"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView04"
+                            app:layout_constraintStart_toStartOf="@+id/imageView04"
+                            app:layout_constraintTop_toTopOf="@id/imageView04" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="180dp"
+                    android:layout_height="67dp"
+                    android:layout_row="1"
+                    android:layout_column="4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/radius_bgcolor"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/radius_color_pink"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="工作党恋爱互助"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/imageView14"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView143"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999+条新帖"
+                            android:textSize="10dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView142"
+                            app:layout_constraintTop_toBottomOf="@+id/textView142" />
+
+                        <TextView
+                            android:id="@+id/textView141"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="恋"
+                            app:layout_constraintBottom_toBottomOf="@id/imageView14"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                            app:layout_constraintStart_toStartOf="@+id/imageView14"
+                            app:layout_constraintTop_toTopOf="@id/imageView14" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </GridLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/radius_bgcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="297dp"
+                    android:layout_height="24dp"
+                    android:text="收集“云宝”贴纸，表达看帖态度"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:src="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/radius_bgcolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

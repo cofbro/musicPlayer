@@ -73,6 +73,9 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bb
 
     //nav
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.1")
@@ -98,6 +101,7 @@ dependencies {
     //实现圆形图片
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -137,4 +141,6 @@ dependencies {
     // reflection
     implementation 'com.github.tiann:FreeReflection:3.1.0'
 >>>>>>> chy
+=======
+>>>>>>> bb
 }

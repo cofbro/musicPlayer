@@ -21,7 +21,11 @@
             android:id="@+id/listItemImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:src="@drawable/ic_music_icon" />
+=======
+            android:src="@drawable/music_vector" />
+>>>>>>> bb
     </androidx.cardview.widget.CardView>
 
     <TextView

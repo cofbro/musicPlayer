@@ -9,7 +9,6 @@ import androidx.activity.viewModels
 import android.content.pm.PackageManager
 import android.os.Build
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.fragment.NavHostFragment
@@ -91,5 +90,6 @@ class MainActivity : AppCompatActivity() {
         }
         resultLauncher.launch(permissionArray.toTypedArray())
     }
+
 
 }

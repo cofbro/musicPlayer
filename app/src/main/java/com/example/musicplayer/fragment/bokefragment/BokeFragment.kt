@@ -36,6 +36,10 @@ class BokeFragment : Fragment() {
 
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             when (position) {
+<<<<<<< HEAD:app/src/main/java/com/example/musicplayer/fragment/bokefragment/BokeFragment.kt
+=======
+
+>>>>>>> bb:app/src/main/java/com/example/musicplayer/fragment/BokeFragment.kt
                 0 -> tab.text = "听听"
                 1 -> tab.text = "故事"
             }

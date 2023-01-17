@@ -9,13 +9,19 @@
             type="com.example.musicplayer.model.SharedViewModel"/>
     </data>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
@@ -68,7 +74,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+<<<<<<< HEAD
                     android:src="@drawable/ic_music_icon"
+=======
+                    android:src="@drawable/music_vector"
+>>>>>>> bb
                     tools:layout_editor_absoluteX="27dp"
                     tools:layout_editor_absoluteY="11dp" />
             </androidx.cardview.widget.CardView>

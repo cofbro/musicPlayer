@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="200dp"
     android:height="200dp"
@@ -10,4 +13,8 @@
   <path
       android:pathData="M464.2,437l-25.6,-44.3c-45.3,26.2 -73.5,75 -73.5,127.3 0,81 65.9,147 147,147s147,-65.9 147,-147v-6.3L451.2,115.4h164V64.2H366.8l241,461.8c-3.1,50.1 -44.8,89.9 -95.6,89.9 -52.8,0 -95.8,-43 -95.8,-95.8 -0.1,-34.1 18.2,-66 47.8,-83.1z"
       android:fillColor="#f8533e"/>
+<<<<<<< HEAD
 </vector>
+=======
+</vector>
+>>>>>>> bb

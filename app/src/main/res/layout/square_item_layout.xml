@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/radius_bgcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/squareAvatarPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/user_avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/squareUserNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="一块兔土司"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/squareAvatarPic"
+        app:layout_constraintTop_toTopOf="@id/squareAvatarPic"
+        />
+    <TextView
+        android:id="@+id/squareTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昨天 13：16 广东"
+        app:layout_constraintTop_toBottomOf="@id/squareUserNameText"
+        app:layout_constraintStart_toStartOf="@id/squareUserNameText"
+        />
+    <TextView
+        android:id="@+id/squareCommentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的2022关键词"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/squareAvatarPic"
+        app:layout_constraintStart_toStartOf="@id/squareAvatarPic"
+        />
+    <TextView
+        android:id="@+id/squareCommentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回顾2022这一年，我都关键词是“放下”，2022"
+        app:layout_constraintTop_toBottomOf="@id/squareCommentTitle"
+        app:layout_constraintStart_toStartOf="@id/squareCommentTitle"
+        />
+    <ImageView
+        android:id="@+id/squareCommentPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/squareCommentText"
+        app:layout_constraintTop_toBottomOf="@+id/squareCommentText"
+        app:srcCompat="@drawable/user_avatar" />
+
+    <ImageView
+        android:id="@+id/squareIcComment"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/comment"
+        app:layout_constraintStart_toStartOf="@id/squareCommentPic"
+        app:layout_constraintTop_toBottomOf="@id/squareCommentPic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="97"
+        app:layout_constraintStart_toEndOf="@id/squareIcComment"
+        app:layout_constraintTop_toTopOf="@id/squareIcComment"
+        app:layout_constraintBottom_toBottomOf="@id/squareIcComment"/>
+
+    <ImageView
+        android:id="@+id/squareIcGood"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/good"
+        app:layout_constraintStart_toEndOf="@id/squareCommentPic"
+        app:layout_constraintTop_toBottomOf="@id/squareCommentPic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="97"
+        app:layout_constraintStart_toEndOf="@id/squareIcGood"
+        app:layout_constraintTop_toTopOf="@id/squareIcGood"
+        app:layout_constraintBottom_toBottomOf="@id/squareIcGood"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAe6e6e6"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/gridLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="76dp"
+                android:columnCount="2"
+                android:padding="5dp"
+                android:rowCount="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ktv_bgcolor_one">
+
+                    <ImageView
+                        android:id="@+id/createRoom"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/house"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:text="创建房间"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/createRoom"
+                        app:layout_constraintStart_toEndOf="@+id/createRoom"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ktv_bgcolor_one">
+
+                    <ImageView
+                        android:id="@+id/paihangbang"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ranking"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:text="排行榜"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/paihangbang"
+                        app:layout_constraintStart_toEndOf="@+id/paihangbang"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="410dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:text="猜你喜欢"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLove"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="414dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chip_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#AAe6e6e6"
+                        android:fadeScrollbars="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:checkable="true"
+                            android:text="全部"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+                            app:rippleColor="@color/themeRed" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:checkable="true"
+                            android:text="热门"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+
+                            app:rippleColor="@color/themeRed" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:checkable="true"
+                            android:text="嗨唱房"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+                            app:rippleColor="@color/themeRed" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:checkable="true"
+                            android:text="校友房"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+                            app:rippleColor="@color/themeRed" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:checkable="true"
+                            android:text="最新"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+                            app:rippleColor="@color/themeRed" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:checkable="true"
+                            android:text="听歌房"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+                            app:rippleColor="@color/themeRed" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/seven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="5dp"
+                            android:checkable="true"
+                            android:text="热点房"
+                            android:textSize="16sp"
+                            app:checkedIcon="@null"
+                            app:chipBackgroundColor="#AAe6e6e6"
+                            app:rippleColor="@color/themeRed" />
+
+
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewRoom"
+                android:layout_width="match_parent"
+                android:layout_height="411dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

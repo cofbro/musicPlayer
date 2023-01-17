@@ -255,7 +255,11 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginTop="16dp"
+<<<<<<< HEAD
                             android:src="@drawable/ic_music_icon"
+=======
+                            android:src="@drawable/music_vector"
+>>>>>>> bb
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.492"
                             app:layout_constraintStart_toStartOf="parent"
