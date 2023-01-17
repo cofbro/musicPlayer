@@ -25,6 +25,14 @@
         android:name="com.example.musicplayer.fragment.FollowFragment"
         android:label="fragment_follow"
         tools:layout="@layout/fragment_follow" />
+        <action
+            android:id="@+id/action_followFragment_to_dongtaiFragment"
+            app:destination="@id/dongtaiFragment" />
+        <action
+            android:id="@+id/action_followFragment_to_editStateFragment"
+            app:destination="@id/editStateFragment" />
+
+
     <fragment
         android:id="@+id/listenFragment"
         android:name="com.example.musicplayer.fragment.tabfragment.ListenFragment"
@@ -42,7 +50,8 @@
             app:destination="@id/musicBoxFragment" />
         <action
             android:id="@+id/E"
-            app:destination="@id/myFriendFragment" />
+
+            app:destination="@id/buyFragment" />
         <action
             android:id="@+id/action_selfFragment_to_downLoadFragment"
             app:destination="@id/downLoadFragment" />
@@ -61,6 +70,15 @@
         <action
             android:id="@+id/F"
             app:destination="@id/collectionFragment" />
+        <action
+            android:id="@+id/seven"
+            app:destination="@id/myBokeFragment" />
+        <action
+            android:id="@+id/one"
+            app:destination="@id/recentPlayFragment" />
+        <action
+            android:id="@+id/three"
+            app:destination="@id/uploadFragment" />
     </fragment>
     <fragment
         android:id="@+id/storyFragment"
@@ -129,4 +147,37 @@
         android:name="com.example.musicplayer.fragment.CollectionFragment"
         android:label="fragment_collection"
         tools:layout="@layout/fragment_collection" />
+    <fragment
+        android:id="@+id/followAllFragment"
+        android:name="com.example.musicplayer.fragment.tabfragment.FollowAllFragment"
+        android:label="fragment_follow_all"
+        tools:layout="@layout/fragment_follow_all" />
+    <fragment
+        android:id="@+id/followMusicianFragment"
+        android:name="com.example.musicplayer.fragment.tabfragment.FollowMusicianFragment"
+        android:label="fragment_follow_musician"
+        tools:layout="@layout/fragment_follow_musician" />
+    <fragment
+        android:id="@+id/followFriendsFragment"
+        android:name="com.example.musicplayer.fragment.tabfragment.FollowFriendsFragment"
+        android:label="fragment_follow_friends"
+        tools:layout="@layout/fragment_follow_friends" />
+    <fragment
+        android:id="@+id/dongtaiFragment"
+        android:name="com.example.musicplayer.fragment.DongtaiFragment"
+        android:label="fragment_dongtai"
+        tools:layout="@layout/fragment_dongtai" >
+        <action
+            android:id="@+id/action_dongtaiFragment_to_followFragment"
+            app:destination="@id/followFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStateFragment"
+        android:name="com.example.musicplayer.fragment.EditStateFragment"
+        android:label="fragment_edit_state"
+        tools:layout="@layout/fragment_edit_state" >
+        <action
+            android:id="@+id/action_editStateFragment_to_followFragment"
+            app:destination="@id/followFragment" />
+    </fragment>
 </navigation>

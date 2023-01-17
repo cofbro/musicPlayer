@@ -20,6 +20,8 @@ class FollowAllFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentFollowAllBinding.inflate(inflater,container,false)
+
+
         return binding.root
     }
 

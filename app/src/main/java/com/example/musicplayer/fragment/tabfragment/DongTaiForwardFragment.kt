@@ -7,26 +7,27 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.musicplayer.R
-import com.example.musicplayer.adapter.FollowAdapter
-import com.example.musicplayer.databinding.FragmentFollowFriendsBinding
+import com.example.musicplayer.adapter.DongtaiCommentAdapter
+import com.example.musicplayer.adapter.DongtaiForwardAdapter
+import com.example.musicplayer.databinding.FragmentDongtaiForwardBinding
+import com.example.musicplayer.databinding.FragmentDontaiCommentsBinding
 
-class FollowFriendsFragment : Fragment() {
-    private  lateinit var binding:FragmentFollowFriendsBinding
-    private lateinit var adapter:FollowAdapter
-
+class DongTaiForwardFragment : Fragment() {
+    private lateinit var binding: FragmentDongtaiForwardBinding
+    private lateinit var adapter: DongtaiForwardAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View? {
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentFollowFriendsBinding.inflate(inflater,container,false)
+        binding = FragmentDongtaiForwardBinding.inflate(inflater,container,false)
         return binding.root
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        adapter = FollowAdapter()
+        adapter = DongtaiForwardAdapter()
         binding.recyclerview.layoutManager = LinearLayoutManager(requireActivity())
         binding.recyclerview.adapter = adapter
-
     }
+
 }

@@ -17,16 +17,16 @@ class FollowMusicianFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentFollowMusicianBinding.inflate(inflater,container,false)
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         adapter = FollowAdapter()
         binding.recyclerview.layoutManager = LinearLayoutManager(requireActivity())
         binding.recyclerview.adapter = adapter
-
     }
 }

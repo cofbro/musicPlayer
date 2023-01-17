@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.musicplayer.ClickEvent
 import com.example.musicplayer.R
 import com.example.musicplayer.adapter.FollowPagerAdapter
 import com.example.musicplayer.databinding.FragmentFollowBinding
@@ -13,13 +14,18 @@ import com.example.musicplayer.fragment.tabfragment.FollowFriendsFragment
 import com.example.musicplayer.fragment.tabfragment.FollowMusicianFragment
 import com.google.android.material.tabs.TabLayoutMediator
 
-class FollowFragment : Fragment() {
+class FollowFragment : Fragment {
+
     private lateinit var binding: FragmentFollowBinding
+
+    constructor() : super()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View{
         binding = FragmentFollowBinding.inflate(layoutInflater, container, false)
+        binding.clickEvent = ClickEvent()
         return binding.root
     }
 

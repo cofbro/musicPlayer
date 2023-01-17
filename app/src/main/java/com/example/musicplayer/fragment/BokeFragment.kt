@@ -45,7 +45,6 @@ class BokeFragment : Fragment() {
         binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageScrollStateChanged(state: Int) {
                 if (state == ViewPager2.SCROLL_STATE_IDLE) {
-//                    Log.d("chy", "----> 3")
                     if (binding.viewPager.currentItem == 0) {
                         binding.add.imageTintList = resources.getColorStateList(R.color.themeRed, null)
                         binding.more.imageTintList = resources.getColorStateList(R.color.black, null)

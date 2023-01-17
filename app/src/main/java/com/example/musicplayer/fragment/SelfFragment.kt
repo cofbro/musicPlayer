@@ -34,4 +34,5 @@ class SelfFragment : Fragment() {
         //将viewPager与tabLayout关联
 
     }
-}
+
+    }

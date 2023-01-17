@@ -51,7 +51,14 @@ fun showBottomNavigationView(view: View) {
 }
 
 fun hideBottomNavigationView(view: View) {
+<<<<<<< HEAD
     ObjectAnimator.ofFloat(view,"translationY",400f).apply {
         duration = 0
     }.start()
 }
+=======
+    ObjectAnimator.ofFloat(view,"translationY",200f).apply {
+        duration = 0
+    }.start()
+}
+>>>>>>> origin/wd

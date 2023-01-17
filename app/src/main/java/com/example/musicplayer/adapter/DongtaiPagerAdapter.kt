@@ -2,15 +2,16 @@ package com.example.musicplayer.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 
-open class FollowPagerAdapter(fragmentManager: FragmentManager, lifecycle: androidx.lifecycle.Lifecycle):FragmentStateAdapter(fragmentManager,lifecycle) {
+class DongtaiPagerAdapter(fragmentManager: FragmentManager, lifecycle: androidx.lifecycle.Lifecycle):
+    FragmentStateAdapter(fragmentManager,lifecycle) {
     private var pageList = emptyList<Fragment>()
     override fun getItemCount(): Int {
         return pageList.size
     }
+
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
