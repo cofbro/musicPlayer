@@ -25,6 +25,7 @@ class BlackandWhiteContainer:ViewGroup {
     val spaceMargin = context.dp2x(3)
     var backInt = 0
     var thisChange=false
+    var i=0
     private lateinit var model: SharedViewModel
     private lateinit var owner: LifecycleOwner
 
