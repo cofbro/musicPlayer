@@ -54,3 +54,13 @@ fun hideBottomNavigationView(view: View) {
         duration = 0
     }.start()
 }
+fun hidePlayerContentBottomNavigationView(view: View) {
+    ObjectAnimator.ofFloat(view,"translationY",400f).apply {
+        duration = 0
+    }.start()
+}
+fun showPlayerContentBottomNavigationView(view: View) {
+    ObjectAnimator.ofFloat(view,"translationY",0f).apply {
+        duration = 0
+    }.start()
+}

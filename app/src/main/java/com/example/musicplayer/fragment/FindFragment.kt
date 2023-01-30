@@ -19,6 +19,7 @@ import com.example.musicplayer.R
 import com.example.musicplayer.SearchS
 import com.example.musicplayer.adapter.findAdapter.*
 import com.example.musicplayer.databinding.FragmentFindBinding
+import com.example.musicplayer.service.BlackandWhiteContainer
 import com.example.musicplayer.viewModel.SharedViewModel
 
 import com.llw.dialog.CustomDialog
@@ -60,6 +61,7 @@ class FindFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         liveAdapter = liveAdapter(requireActivity())
         sharedViewModel.isLastFragment_findFragment.postValue(true)
+        sharedViewModel.JumptoPlayerContent.postValue(false)
         binding.live.apply {
             adapter = liveAdapter
             layoutManager = LinearLayoutManager(requireActivity(), RecyclerView.HORIZONTAL,false)

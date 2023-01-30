@@ -7,9 +7,12 @@ import android.view.ViewGroup
 import androidx.core.net.toUri
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
+import com.example.musicplayer.ISWINDOWPLAY
 import com.example.musicplayer.SongMessage
 import com.example.musicplayer.databinding.ActivitySearchsongsGalleryItemBinding
+import com.example.musicplayer.lastplayer_gloabal
 import com.example.musicplayer.viewModel.SharedViewModel
+import com.example.musicplayer.viewModel.ViewModleMain
 
 
 class SearchSongsAdapter(var context: Context): RecyclerView.Adapter<SearchSongsAdapter.MyViewHolder>() {
@@ -33,19 +36,21 @@ class SearchSongsAdapter(var context: Context): RecyclerView.Adapter<SearchSongs
             binding.searchsongname.text=songMessage.songName
             binding.searchsongsinger.text=songMessage.songSinger
             binding.searchsongplay.setOnClickListener {
+
                 binding.sharemodel!!.isPlayerOn.postValue(true)
                 var url = songMessage.SongUrl
-                val player = MediaPlayer.create(itemView.context, url.toUri())
+                lastplayer_gloabal= MediaPlayer.create(itemView.context, url.toUri())
                 binding.sharemodel!!.isPlayerOn.postValue(true)
                 binding.sharemodel!!.nowPlayersongName.postValue(songMessage.songName)
                 binding.sharemodel!!.nowPlayersongSingerName.postValue(songMessage.songSinger)
                 if ( binding.sharemodel!!.player_global.value ==null){
-                    binding.sharemodel!!.player_global.postValue(player)
+                    binding.sharemodel!!.player_global.postValue(lastplayer_gloabal)
                 }else{
                     binding.sharemodel!!.player_global.value!!.stop()
-                    binding.sharemodel!!.player_global.postValue(player)
+                    binding.sharemodel!!.player_global.postValue(lastplayer_gloabal)
                 }
-                player.start()
+                lastplayer_gloabal!!.start()
+
             }
         }
     }

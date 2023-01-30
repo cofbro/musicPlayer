@@ -8,10 +8,15 @@ import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
 import com.example.musicplayer.databinding.ActivityMainBinding
+import com.example.musicplayer.fragment.FindFragmentDirections
+import com.example.musicplayer.service.BlackandWhiteContainer
+
 import com.example.musicplayer.viewModel.SharedViewModel
 import java.lang.reflect.Field
 
@@ -20,6 +25,8 @@ class MainActivity : AppCompatActivity(),SlidingPaneLayout.PanelSlideListener {
     private lateinit var binding: ActivityMainBinding
     private var showSlide = false
     private val sharedViewModel: SharedViewModel by viewModels()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
 //        initSlideBackClose()
         super.onCreate(savedInstanceState)
@@ -29,11 +36,23 @@ class MainActivity : AppCompatActivity(),SlidingPaneLayout.PanelSlideListener {
         binding.sharemodel=sharedViewModel
         binding.click=Onclick()
         binding.lifecycleOwner=this
+
+//        binding.texttocontent.setOnClickListener {
+//            FindFragmentDirections.actionFindFragmentToPlayerMusicEnterFragment().apply {
+//                it.findNavController().navigate(this)
+//            }
+//        }
+        binding.cardView4.setOnClickListener {
+            if (binding.fragmentContainerView.findNavController().currentDestination?.id==R.id.findFragment){
+                binding.fragmentContainerView.findNavController().navigate(FindFragmentDirections.actionFindFragmentToPlayerContentFragment())}
+        }
+
         //全屏
         window.setFlags(
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
+
     }
     override fun onResume() {
         super.onResume()
@@ -47,6 +66,7 @@ class MainActivity : AppCompatActivity(),SlidingPaneLayout.PanelSlideListener {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         binding.bottomNavigationView.setupWithNavController(navHostFragment.navController)
     }
+
 
     private fun initSlideBackClose() {
         if (isSupportSwipeBack()) {

@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_findFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_findFragment_to_playerContentFragment"
+            app:destination="@id/playerContentFragment" />
     </fragment>
     <fragment
         android:id="@+id/bokeFragment"
@@ -131,4 +134,12 @@
             android:name="menupicture"
             app:argType="com.example.musicplayer.menu.menuPicture" />
     </fragment>
+    <fragment
+        android:id="@+id/playerContentFragment"
+        android:name="com.example.musicplayer.fragment.musicContent.PlayerContentFragment"
+        android:label="PlayerContentFragment" />
+    <fragment
+        android:id="@+id/musicBkwindows"
+        android:name="com.example.musicplayer.fragment.musicContent.MusicBkwindows"
+        android:label="MusicBkwindows" />
 </navigation>

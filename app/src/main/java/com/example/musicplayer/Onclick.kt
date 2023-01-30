@@ -1,8 +1,10 @@
 package com.example.musicplayer
 
+import android.util.Log
 import android.view.View
 import androidx.navigation.findNavController
 import com.example.musicplayer.viewModel.SharedViewModel
+import com.example.musicplayer.viewModel.ViewModleMain
 
 class Onclick {
     fun find_song_list_onclick(view: View, model: SharedViewModel){//搜索界面歌单跳转到歌单
@@ -14,6 +16,14 @@ class Onclick {
         model.shouldShow_bottom_NavigationView.postValue(true)
         model.should_up_Show_play_View.postValue(true)
         view.findNavController().navigateUp()
+    }
+    fun setMusicCanPlaybk(view:View,model: SharedViewModel){
+        Log.v("woow","soso")
+         if (model.shouldPlaywindow.value==true){
+             model.shouldPlaywindow.postValue(false)
+         }else{
+             model.shouldPlaywindow.postValue(true)
+         }
     }
 //    fun findFragment_to_search(view: View,model: com.example.musicplayer.viewModel.SharedViewModel){//主界面到搜索界面
 //        var i = "周"
@@ -44,18 +54,25 @@ class Onclick {
     fun make_player_stop_or_start(view: View,model: SharedViewModel){
     if (model.isPlayerOn.value==true){
         model.isPlayerOn.postValue(false)
+        ViewModleMain.isWindowPlay.postValue(false)
         if(model.player_global.value!=null){
             model.player_global.value!!.pause()
-        }
 
+            Log.v("ooo", model.player_global.value!!.duration.toString())
+        }
     }else{
         model.isPlayerOn.postValue(true)
+        ViewModleMain.isWindowPlay.postValue(true)//全局
         if(model.player_global.value!=null){
             model.player_global.value!!.start()
         }
 
+      }
     }
+    fun get_to_musicplayerContent(view: View,sharedViewModel: SharedViewModel){
+           sharedViewModel.JumptoPlayerContent.postValue(true)
     }
+
 
 
 }

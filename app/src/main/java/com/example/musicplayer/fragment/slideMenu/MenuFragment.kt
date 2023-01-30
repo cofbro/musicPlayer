@@ -5,16 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
 import com.example.musicplayer.R
 import com.example.musicplayer.databinding.FragmentFindBinding
 import com.example.musicplayer.databinding.FragmentMenuBinding
+import com.example.musicplayer.viewModel.SharedViewModel
 
 
 class MenuFragment : Fragment() {
     lateinit var binding:FragmentMenuBinding
-
+    private val model: SharedViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -25,6 +27,7 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        model.JumptoPlayerContent.postValue(true)
         binding.backtofind.setOnClickListener{
             findNavController().navigateUp()
         }

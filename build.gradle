@@ -3,6 +3,7 @@ buildscript {
     dependencies {
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.0")
     }
+
 }
 plugins {
     id 'com.android.application' version '7.2.2' apply false
@@ -13,3 +14,4 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+

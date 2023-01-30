@@ -4,13 +4,16 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.media.MediaPlayer
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.net.toUri
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import com.example.musicplayer.SongMessage
 import com.example.musicplayer.databinding.ActivitySonglistGalleryItemBinding
+import com.example.musicplayer.lastplayer_gloabal
 import com.example.musicplayer.viewModel.SharedViewModel
+import com.example.musicplayer.viewModel.ViewModleMain
 
 class SongListAdapter(var context: Context):RecyclerView.Adapter<SongListAdapter.MyViewHolder>() {
     var mSongList_names =mutableMapOf<Int, String>()
@@ -43,23 +46,19 @@ class SongListAdapter(var context: Context):RecyclerView.Adapter<SongListAdapter
             binding.songlistNumber.text="${songMessage.position+1}"
             binding.songplayer.setOnClickListener {
                 val url = songMessage.SongUrl
-                val player = MediaPlayer.create(itemView.context, url.toUri())
+                ViewModleMain.isWindowPlay.postValue(true)
+                lastplayer_gloabal = MediaPlayer.create(itemView.context, url.toUri())
                 binding.sharemodel!!.isPlayerOn.postValue(true)
                 binding.sharemodel!!.nowPlayersongName.postValue(songMessage.songName)
                 binding.sharemodel!!.nowPlayersongSingerName.postValue(songMessage.songSinger)
+                ViewModleMain.songname.postValue(songMessage.songName)
                 if ( binding.sharemodel!!.player_global.value ==null){
-                    binding.sharemodel!!.player_global.postValue(player)
+                    binding.sharemodel!!.player_global.postValue(lastplayer_gloabal)
                 }else{
                     binding.sharemodel!!.player_global.value!!.stop()
-                    binding.sharemodel!!.player_global.postValue(player)
+                    binding.sharemodel!!.player_global.postValue(lastplayer_gloabal)
                 }
-//                if ( lastplayer_gloabal ==null){
-//                    lastplayer_gloabal =player
-//                }else{
-//                    lastplayer_gloabal !!.stop()
-//                    lastplayer_gloabal=player
-//                }
-                player.start()
+                lastplayer_gloabal!!.start()
             }
         }
 
