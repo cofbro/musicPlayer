@@ -21,18 +21,18 @@ class SharedViewModel : ViewModel() {
     var nowPlayersongName=MutableLiveData<String>("唱响歌曲")
     var nowPlayersongSingerName=MutableLiveData<String>("畅想歌曲")
     var changeColor=MutableLiveData(false)
-    var ThemePicture=MutableLiveData<menuPictureandhave>().apply {
+    var ThemePicture=MutableLiveData<menuPictureandhave>().apply {//控制主体界面
         this.value?.have=false
     }
-    var shouldPlaybk=MutableLiveData(false)
+    var shouldPlaybk=MutableLiveData(false)//没用
     var shouldPlaywindow=MutableLiveData(false)//是否点击文体，显示
     var JumptoPlayerContent=MutableLiveData(false)//判断是否进入播放器界面
     //悬浮窗口创建 移除  基于无障碍服务
     var isShowWindow = MutableLiveData<Boolean>()
     //悬浮窗口创建 移除
-
-    var isShowSuspendWindow = MutableLiveData<Boolean>()
-
-    //悬浮窗口显示 隐藏
-    var isVisible = MutableLiveData<Boolean>()
+//
+//    var isShowSuspendWindow = MutableLiveData<Boolean>()
+//
+//    //悬浮窗口显示 隐藏
+//    var isVisible = MutableLiveData<Boolean>()
 }
