@@ -53,8 +53,6 @@ class songListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        sharedViewModel.should_up_Show_play_View.postValue(false)
-        sharedViewModel.shouldShow_bottom_NavigationView.postValue(false)
        binding.songListName.text=args.songList.songListName
         Glide.with(this)
             .load(args.songList.SongBackPicture)

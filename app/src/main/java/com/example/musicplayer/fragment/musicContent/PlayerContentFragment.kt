@@ -60,8 +60,6 @@ class PlayerContentFragment : Fragment() {
         {
             Log.v("ioo", binding.sharemodel!!.player_global.value!!.duration.toString())
         }
-
-        model.JumptoPlayerContent.postValue(true)
         binding.backs.setOnClickListener {
             findNavController().navigateUp()
             model.JumptoPlayerContent.postValue(false)

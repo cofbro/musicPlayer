@@ -69,9 +69,7 @@ class Onclick {
 
       }
     }
-    fun get_to_musicplayerContent(view: View,sharedViewModel: SharedViewModel){
-           sharedViewModel.JumptoPlayerContent.postValue(true)
-    }
+
 
 
 

@@ -36,6 +36,8 @@ class SearchSongListAdpater (var context: Context): RecyclerView.Adapter<SearchS
                 .into( binding.searchSonglistPicture);
             binding.searchSonglistConstraint.setOnClickListener {
                 this.binding.sharemodel!!.isLastFragment_findFragment.postValue(false)
+                this.binding.sharemodel!!.should_up_Show_play_View.postValue(false)
+                this.binding.sharemodel!!.shouldShow_bottom_NavigationView.postValue(false)
                 val action = SearchFragmentDirections.actionSearchFragmentToSongListFragment(songList)
                 it.findNavController().navigate(action)
             }

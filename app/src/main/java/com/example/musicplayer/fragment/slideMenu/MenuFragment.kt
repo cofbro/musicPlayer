@@ -27,7 +27,6 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        model.JumptoPlayerContent.postValue(true)
         binding.backtofind.setOnClickListener{
             findNavController().navigateUp()
         }

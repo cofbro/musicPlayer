@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity(),SlidingPaneLayout.PanelSlideListener {
 //        }
         binding.cardView4.setOnClickListener {
             if (binding.fragmentContainerView.findNavController().currentDestination?.id==R.id.findFragment){
+                sharedViewModel.JumptoPlayerContent.postValue(true)
                 binding.fragmentContainerView.findNavController().navigate(FindFragmentDirections.actionFindFragmentToPlayerContentFragment())}
         }
 

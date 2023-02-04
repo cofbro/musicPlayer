@@ -46,6 +46,8 @@ class commendAdapter(val context: Context): RecyclerView.Adapter<commendAdapter.
                 .into(binding.idIndexGalleryItemImageCommend);
             binding.textItemCommend.text = songList.songListName
             binding.idIndexGalleryItemImageCommend.setOnClickListener{
+                this.binding.sharemodel!!.should_up_Show_play_View.postValue(false)
+                this.binding.sharemodel!!.shouldShow_bottom_NavigationView.postValue(false)
                 val action = FindFragmentDirections.actionFindFragmentToSongListFragment(songList)
                 Log.v("wh","gogogo")
                 it.findNavController().navigate(action)

@@ -61,7 +61,6 @@ class FindFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         liveAdapter = liveAdapter(requireActivity())
         sharedViewModel.isLastFragment_findFragment.postValue(true)
-        sharedViewModel.JumptoPlayerContent.postValue(false)
         binding.live.apply {
             adapter = liveAdapter
             layoutManager = LinearLayoutManager(requireActivity(), RecyclerView.HORIZONTAL,false)
